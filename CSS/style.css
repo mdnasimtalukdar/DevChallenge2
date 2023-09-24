@@ -1,0 +1,108 @@
+/* === This part of code is for Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins:wght@400;600;700&display=swap');
+
+/* === This part of code is for common styling === */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+:root {
+    font-size: 62.5%;
+}
+h3, p {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+h4 {
+    font-family: 'PT Serif', serif;
+    font-size:1.2rem;
+    transform: rotate(-270deg);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+    position: absolute;
+    top: 4.5rem;
+    left: 21rem;
+}
+.pera5 {
+    top: 2.6rem;
+    left: 23rem;
+}
+.pera4 {
+    top: 2.6rem;
+    left: 23rem;
+}
+.pera3 {
+    top: 3.2rem;
+    left: 23rem;
+}
+.pera2 {
+    top: 2.4rem;
+    left: 23rem;
+}
+.pera1 {
+    top: 3.5rem;
+    left: 22rem;
+}
+body {
+    background: #FAFAFA;
+}
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 10rem 20rem;
+
+}
+.mt {
+    margin-top: 10rem;
+}
+/* === This part of code for Team section === */
+.team__container__header__content {
+    display: flex;
+    justify-content: space-between;
+}
+.team__container__header__content .left__content h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    font-family: 'PT Serif', serif;
+    letter-spacing: -1.62px;
+}
+.team__container__header__content .right__content h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.team__container__header__content .right__content {
+    width: 43rem;
+}
+.team__container__header__content .right__content p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+    margin: 1rem 0 9rem 0;
+}
+.member__content {
+    position: relative;
+}
+.team__members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+.image {
+    width: 23rem;
+}
+.image img {
+    width: 100%;
+}
+.team__member h3{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-top: .5rem;
+}
