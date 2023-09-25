@@ -26,28 +26,9 @@ h4 {
     font-weight: 600;
     color: #000;
     position: absolute;
-    top: 4.5rem;
-    left: 21rem;
-}
-.pera5 {
-    top: 2.6rem;
-    left: 23rem;
-}
-.pera4 {
-    top: 2.6rem;
-    left: 23rem;
-}
-.pera3 {
-    top: 3.2rem;
-    left: 23rem;
-}
-.pera2 {
-    top: 2.4rem;
-    left: 23rem;
-}
-.pera1 {
-    top: 3.5rem;
-    left: 22rem;
+    top: 5rem;
+    left: 20rem;
+    width: 11rem;
 }
 body {
     background: #FAFAFA;
@@ -71,6 +52,7 @@ body {
     font-weight: 700;
     font-family: 'PT Serif', serif;
     letter-spacing: -1.62px;
+    margin-left: 4rem;
 }
 .team__container__header__content .right__content h3 {
     font-size: 1.8rem;
@@ -92,10 +74,12 @@ body {
 .team__members {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
     gap: 5rem;
 }
 .image {
-    width: 23rem;
+    max-width: 23rem;
 }
 .image img {
     width: 100%;
@@ -105,4 +89,36 @@ body {
     font-weight: 600;
     letter-spacing: .2rem;
     margin-top: .5rem;
+}
+
+/* === This part of code is for responsive === */
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 3rem;
+    }
+    .mt {
+        margin-top: 0;
+    }
+    .team__container__header__content {
+        flex-direction: column;
+    }
+    .team__members {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+
+    h4{
+        display: none;
+    }
+    .team__container__header__content .left__content h1 {
+        margin-bottom: 5rem;
+        margin-left: 0rem;
+    }
+    .team__container__header__content .right__content {
+        max-width: 23rem;
+    }
+    .team__member h3{
+        font-size: 1.6rem;
+    }
 }
