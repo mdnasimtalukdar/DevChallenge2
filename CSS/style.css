@@ -122,3 +122,14 @@ body {
         font-size: 1.6rem;
     }
 }
+@media screen and (min-width:576px) and (max-width:992px) {
+    .container{
+        padding: 10rem 10rem;
+    }
+    .team__container__header__content .right__content {
+        width: 36rem;
+    }
+    h4{
+        left: 10rem;
+    }
+}
